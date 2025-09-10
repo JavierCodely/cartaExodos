@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
         
         <div className="border-t border-gray-800 mt-6 pt-6 text-center">
           <p className="text-sm text-gray-500">
-            © 2025 Club Neon. Consumir con responsabilidad. +18 años.
+            © 2025 Exodos night club. Consumir con responsabilidad. +18 años.
           </p>
         </div>
       </div>
