@@ -204,13 +204,5 @@ export const drinks: Drink[] = [
     category: 'sin-alcohol',
     image: 'https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=400',
     isPopular: true
-  },
-  {
-    id: '23',
-    name: 'Viaje de la felicidad',
-    description: 'Flores',
-    price: 0,
-    category: 'sin-alcohol',
-    image: './img/istockphoto-1367538455-612x612.jpg'
   }
 ];
