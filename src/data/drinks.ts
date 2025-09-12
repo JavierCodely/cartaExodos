@@ -130,7 +130,7 @@ export const drinks: Drink[] = [
   description: 'SERNOVA en botella',
   price: "5.200",
   category: 'vodkas',
-  image: '/img/sernova.png',
+  image: '/img/sernovaindivirul.png',
   isPopular: false,
   alcoholContent: '100%'
  },
