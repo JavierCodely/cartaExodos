@@ -9,13 +9,11 @@ import { DrinkCategory } from './types/drink';
 
 const categories = [
   { key: 'all' as const, label: 'Todas' },
-  { key: 'cocteles' as const, label: 'Cocteles' },
-  { key: 'shots' as const, label: 'Shots' },
+  { key: 'combos' as const, label: 'Combos' },
   { key: 'cervezas' as const, label: 'Cervezas' },
   { key: 'vinos' as const, label: 'Vinos' },
-  { key: 'premium' as const, label: 'Premium' },
-  { key: 'sin-alcohol' as const, label: 'Sin Alcohol' },
-  { key: 'especiales' as const, label: 'Especiales' },
+  { key: 'vodkas' as const, label: 'Vodkas' },
+  { key: 'sin-alcohol' as const, label: 'Sin Alcohol' }
 ];
 
 function App() {
@@ -38,11 +36,20 @@ function App() {
       );
     }
 
-    // Sort by popularity and price
+    // Sort by price (highest first), then by popularity
     return filtered.sort((a, b) => {
+      // Convert price strings to numbers for comparison
+      const priceA = parseFloat(a.price.replace(/[^\d]/g, ''));
+      const priceB = parseFloat(b.price.replace(/[^\d]/g, ''));
+      
+      // Sort by highest price first
+      if (priceB !== priceA) return priceB - priceA;
+      
+      // If prices are equal, sort by popularity
       if (a.isPopular && !b.isPopular) return -1;
       if (!a.isPopular && b.isPopular) return 1;
-      return a.price - b.price;
+      
+      return 0;
     });
   }, [selectedCategory, searchTerm]);
 

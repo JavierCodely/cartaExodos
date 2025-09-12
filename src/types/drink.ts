@@ -9,4 +9,4 @@ export interface Drink {
   alcoholContent?: string;
 }
 
-export type DrinkCategory = 'cocteles' | 'shots' | 'cervezas' | 'vinos' | 'sin-alcohol' | 'premium';
+export type DrinkCategory = 'combos' | 'shots' | 'cervezas' | 'vinos' | 'sin-alcohol' | 'premium' | 'vodkas';

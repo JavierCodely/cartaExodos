@@ -9,16 +9,16 @@ interface DrinkCardProps {
 export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'cocteles':
-        return 'from-pink-500 to-rose-600';
+      case 'combos':
+        return 'from-yellow-400 to-orange-500';
       case 'shots':
         return 'from-red-500 to-orange-600';
       case 'cervezas':
-        return 'from-yellow-500 to-amber-600';
+        return 'from-red-500 to-red-600';
       case 'vinos':
         return 'from-purple-500 to-violet-600';
-      case 'premium':
-        return 'from-yellow-400 to-orange-500';
+      case 'vodkas':
+        return 'from-blue-400 to-blue-500';
       case 'sin-alcohol':
         return 'from-green-500 to-emerald-600';
       default:
@@ -63,8 +63,8 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
           </div>
         </div>
         
-        <div className="flex items-center justify-center">
-          <span className="text-lg sm:text-2xl font-bold text-white drop-shadow-md">
+        <div className="flex items-center justify-center ">
+          <span className="text-lg sm:text-2xl font-bold  text-white drop-shadow-md">
             ${drink.price}
           </span>
        
