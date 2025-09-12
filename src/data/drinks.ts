@@ -91,7 +91,7 @@ export const drinks: Drink[] = [
  {
   id: '9',
   name: 'SPEED UNLIMITED',
-  description: 'SPEED UNLIMITED en lata',
+  description: 'Es una bebida energetica sin alcohol.',
   price: "1.200",
   category: 'sin-alcohol',
   image: '/img/speed.png',

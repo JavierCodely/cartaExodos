@@ -63,8 +63,8 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
           </div>
         </div>
         
-        <div className="flex items-center justify-center ">
-          <span className="text-lg sm:text-2xl font-bold  text-white drop-shadow-md">
+        <div className="flex items-center justify-center  display-block">
+          <span className="text-lg sm:text-2xl font-bold  text-white drop-shadow-md display-block">
             ${drink.price}
           </span>
        
