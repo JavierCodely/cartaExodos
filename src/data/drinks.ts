@@ -144,6 +144,16 @@ export const drinks: Drink[] = [
   isPopular: false,
   alcoholContent: '100%'
  },
+ {
+  id: '18',
+  name: 'SKYY VODKA',
+  description: 'SKYY VODKA en botella',
+  price: "5.200",
+  category: 'vodkas',
+  image: '/img/vodka indiviual.png',
+  isPopular: false,
+  alcoholContent: '100%'
+ },
 
  //cervezas
  {
