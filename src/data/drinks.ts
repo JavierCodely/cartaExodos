@@ -8,7 +8,7 @@ export const drinks: Drink[] = [
     description: 'Combo de 1 red label y 2 speed.',
     price: "70.000",
     category: 'combos',
-    image: './img/1.png',
+    image: '/img/1.png',
     isPopular: true,
     alcoholContent: '100%'
   },
@@ -18,7 +18,7 @@ export const drinks: Drink[] = [
     description: 'Combo de 1 smirnoff y 2 speed.',
     price: "27.000",
     category: 'combos',
-    image: './img/2.png',
+    image: '/img/2.png',
     isPopular: true,
     alcoholContent: '100%'
   },
@@ -29,7 +29,7 @@ export const drinks: Drink[] = [
     description: 'Combo de 1 skyy vodka y 2 speed.',
     price: "27.000",
     category: 'combos',
-    image: './img/3.png',
+    image: '/img/3.png',
     isPopular: true,
     alcoholContent: '100%'
   },
@@ -39,7 +39,7 @@ export const drinks: Drink[] = [
     description: 'Combo de 1 sernova y 2 speed.',
     price: "27.000",
     category: 'combos',
-    image: './img/4.png',
+    image: '/img/4.png',
     isPopular: true,
     alcoholContent: '100%'
   },
@@ -53,7 +53,7 @@ export const drinks: Drink[] = [
   description: 'Agua mineral de lasmisiones manaos',
   price: "1.200",
   category: 'sin-alcohol',
-  image: './img/las misiones.png',
+  image: '/img/las misiones.png',
   isPopular: false,
   alcoholContent: '0%'
  },
@@ -63,7 +63,7 @@ export const drinks: Drink[] = [
   description: 'Coca Cola en lata',
   price: "1.200",
   category: 'sin-alcohol',
-  image: './img/coca cola.png',
+  image: '/img/coca cola.png',
   isPopular: false,
   alcoholContent: '0%'
  },
@@ -73,7 +73,7 @@ export const drinks: Drink[] = [
   description: 'Sprite en lata',
   price: "1.200",
   category: 'sin-alcohol',
-  image: './img/spritee.png',
+  image: '/img/spritee.png',
   isPopular: false,
   alcoholContent: '0%'
  }
@@ -84,7 +84,7 @@ export const drinks: Drink[] = [
   description: 'Monster Energy en lata',
   price: "1.200",
   category: 'sin-alcohol',
-  image: './img/monster energy.png',
+  image: '/img/monster energy.png',
   isPopular: false,
   alcoholContent: '0%'
  },
@@ -94,7 +94,7 @@ export const drinks: Drink[] = [
   description: 'SPEED UNLIMITED en lata',
   price: "1.200",
   category: 'sin-alcohol',
-  image: './img/speed.png',
+  image: '/img/speed.png',
   isPopular: true,
   alcoholContent: '0%'
  },
@@ -107,7 +107,7 @@ export const drinks: Drink[] = [
   description: 'Cosecha tardia en botella',
   price: "5.200",
   category: 'vinos',
-  image: './img/cosecha tardia.png',
+  image: '/img/cosecha tardia.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -117,7 +117,7 @@ export const drinks: Drink[] = [
   description: 'prisionero en botella',
   price: "5.200",
   category: 'vinos',
-  image: './img/prisionero vino.png',
+  image: '/img/prisionero vino.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -130,7 +130,7 @@ export const drinks: Drink[] = [
   description: 'SERNOVA en botella',
   price: "5.200",
   category: 'vodkas',
-  image: './img/sernova.png',
+  image: '/img/sernova.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -140,7 +140,7 @@ export const drinks: Drink[] = [
   description: 'SMIRNOFF VODKA en botella',
   price: "5.200",
   category: 'vodkas',
-  image: './img/smirnoff.png',
+  image: '/img/smirnoff.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -152,7 +152,7 @@ export const drinks: Drink[] = [
   description: 'SOL en botella',
   price: "5.200",
   category: 'cervezas',
-  image: './img/sol botella222.png',
+  image: '/img/sol botella222.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -162,7 +162,7 @@ export const drinks: Drink[] = [
   description: 'Porron en botella',
   price: "5.200",
   category: 'cervezas',
-  image: './img/proooorn.png',
+  image: '/img/proooorn.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -172,7 +172,7 @@ export const drinks: Drink[] = [
   description: 'Estella en lata',
   price: "5.200",
   category: 'cervezas',
-  image: './img/sol.png',
+  image: '/img/sol.png',
   isPopular: false,
   alcoholContent: '100%'
  },
@@ -182,7 +182,7 @@ export const drinks: Drink[] = [
   description: 'Corona en botella',
   price: "5.200",
   category: 'cervezas',
-  image: './img/corona botella.png',
+  image: '/img/corona botella.png',
   isPopular: false,
   alcoholContent: '100%'
  }
