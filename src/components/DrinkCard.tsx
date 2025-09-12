@@ -64,7 +64,7 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
         </div>
         
         <div className="flex items-center justify-center">
-          <span className="text-lg sm:text-2xl font-bold text-transparent bg-gradient-to-r from-green-400 to-green-600 bg-clip-text">
+          <span className="text-lg sm:text-2xl font-bold text-white drop-shadow-md">
             ${drink.price}
           </span>
        

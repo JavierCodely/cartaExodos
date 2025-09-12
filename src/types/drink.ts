@@ -2,7 +2,7 @@ export interface Drink {
   id: string;
   name: string;
   description: string;
-  price: number;
+  price: string;
   category: DrinkCategory;
   image: string;
   isPopular?: boolean;
