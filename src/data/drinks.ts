@@ -15,7 +15,7 @@ export const drinks: Drink[] = [
   },
     {
     id: '1',
-    name: 'Combo ABSOLUTE VODKA + 2 SPEED',
+    name: 'ABSOLUTE VODKA + 2 SPEED',
     description: 'Combo de 1 absolute vodka y 2 speed.',
     price: "75.000",
     category: 'Combos',
@@ -255,8 +255,8 @@ export const drinks: Drink[] = [
  },
  {
   id: '17',
-  name: 'Corona',
-  description: 'Corona en botella',
+  name: 'Corona 710CC',
+  description: 'Corona en botella 710CC',
   price: "11.000",
   category: 'Cervezas',
   image: '/img/corona botella.png',
