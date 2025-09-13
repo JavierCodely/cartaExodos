@@ -15,7 +15,7 @@ export const drinks: Drink[] = [
   },
     {
     id: '1',
-    name: 'ABSOLUTE VODKA + 2 SPEED',
+    name: 'ABSOLUT VODKA + 2 SPEED',
     description: 'Combo de 1 absolute vodka y 2 speed.',
     price: "75.000",
     category: 'Combos',
@@ -83,6 +83,16 @@ export const drinks: Drink[] = [
     category: 'Combos',
     image: '/img/cosecha tardia.png',
     isPopular: true,
+    alcoholContent: '100%'
+  },
+  {
+    id: '30',
+    name: 'X12 HEINEKEN PORRON',
+    description: 'Combo de 12 heineken porron.',
+    price: "55.000",
+    category: 'Combos',
+    image: '/img/PRRONCOM.png',
+    isPopular: false,
     alcoholContent: '100%'
   },
 
