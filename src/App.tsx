@@ -37,20 +37,16 @@ function App() {
       );
     }
 
-    // Sort by price (highest first), then by popularity
+    // Sort by popularity first, then by price (highest first)
     return filtered.sort((a, b) => {
-      // Convert price strings to numbers for comparison
-      const priceA = parseFloat(a.price.replace(/[^\d]/g, ''));
-      const priceB = parseFloat(b.price.replace(/[^\d]/g, ''));
-      
-      // Sort by highest price first
-      if (priceB !== priceA) return priceB - priceA;
-      
-      // If prices are equal, sort by popularity
+      // Sort by popularity first - popular drinks always come first
       if (a.isPopular && !b.isPopular) return -1;
       if (!a.isPopular && b.isPopular) return 1;
       
-      return 0;
+      // If both have same popularity status, sort by highest price first
+      const priceA = parseFloat(a.price.replace(/[^\d]/g, ''));
+      const priceB = parseFloat(b.price.replace(/[^\d]/g, ''));
+      return priceB - priceA;
     });
   }, [selectedCategory, searchTerm]);
 

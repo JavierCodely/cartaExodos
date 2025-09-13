@@ -24,6 +24,16 @@ export const drinks: Drink[] = [
     alcoholContent: '100%'
   },
   {
+    id: '20',
+    name: 'GIN TONIC + 3 AGUAS TONICAS',
+    description: 'Combo de 1 gin tonic y 3 aguas tonicas.',
+    price: "30.000",
+    category: 'Combos',
+    image: '/img/gintonik.png',
+    isPopular: true,
+    alcoholContent: '100%'
+  },
+  {
     id: '2',
     name: 'SMIRNOFF VODKA + 2 SPEED',
     description: 'Combo de 1 smirnoff y 2 speed.',
@@ -64,16 +74,7 @@ export const drinks: Drink[] = [
     isPopular: true,
     alcoholContent: '100%'
   },
-  {
-    id: '20',
-    name: 'GIN TONIC + 3 AGUAS TONICAS',
-    description: 'Combo de 1 gin tonic y 3 aguas tonicas.',
-    price: "30.000",
-    category: 'Combos',
-    image: '/img/gintonik.png',
-    isPopular: true,
-    alcoholContent: '100%'
-  },
+  
   {
     id: '21',
     name: 'COSECHA TARDIA + 2 SPRITE',
