@@ -9,17 +9,17 @@ interface DrinkCardProps {
 export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'combos':
+      case 'Combos':
         return 'from-yellow-400 to-orange-500';
-      case 'shots':
+      case 'Aperitivos':
         return 'from-red-500 to-orange-600';
-      case 'cervezas':
+      case 'Cervezas':
         return 'from-red-500 to-red-600';
-      case 'vinos':
+      case 'Vinos':
         return 'from-purple-500 to-violet-600';
-      case 'vodkas':
+      case 'Vodkas':
         return 'from-blue-400 to-blue-500';
-      case 'sin-alcohol':
+      case 'Sin-alcohol':
         return 'from-green-500 to-emerald-600';
       default:
         return 'from-blue-500 to-cyan-600';
@@ -44,7 +44,7 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
               <span className="hidden sm:inline">Popular</span>
             </div>
           )}
-          {drink.category === 'premium' && (
+          {drink.category === 'Premium' && (
             <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-1 sm:px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
               <Zap className="w-3 h-3 fill-current" />
               <span className="hidden sm:inline">Premium</span>

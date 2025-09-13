@@ -9,11 +9,12 @@ import { DrinkCategory } from './types/drink';
 
 const categories = [
   { key: 'all' as const, label: 'Todas' },
-  { key: 'combos' as const, label: 'Combos' },
-  { key: 'cervezas' as const, label: 'Cervezas' },
-  { key: 'vinos' as const, label: 'Vinos' },
-  { key: 'vodkas' as const, label: 'Vodkas' },
-  { key: 'sin-alcohol' as const, label: 'Sin Alcohol' }
+  { key: 'Combos' as const, label: 'Combos' },
+  { key: 'Aperitivos' as const, label: 'Aperitivos' },
+  { key: 'Vodkas' as const, label: 'Vodkas' },
+  { key: 'Cervezas' as const, label: 'Cervezas' },
+  { key: 'Vinos' as const, label: 'Vinos' },
+  { key: 'Sin-alcohol' as const, label: 'Sin Alcohol' }
 ];
 
 function App() {
