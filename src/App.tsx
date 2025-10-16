@@ -1,5 +1,6 @@
 import  { useState, useMemo } from 'react';
 import { Header } from './components/Header';
+import { MarqueeBanner } from './components/MarqueeBanner';
 import { SearchBar } from './components/SearchBar';
 import { CategoryFilter } from './components/CategoryFilter';
 import { DrinkGrid } from './components/DrinkGrid';
@@ -12,6 +13,8 @@ const categories = [
   { key: 'Combos' as const, label: 'Combos' },
   { key: 'Aperitivos' as const, label: 'Aperitivos' },
   { key: 'Vodkas' as const, label: 'Vodkas' },
+  { key: 'Gin' as const, label: 'Gin' },
+  { key: 'Champan' as const, label: 'Champán' },
   { key: 'Cervezas' as const, label: 'Cervezas' },
   { key: 'Vinos' as const, label: 'Vinos' },
   { key: 'Sin-alcohol' as const, label: 'Sin Alcohol' }
@@ -53,7 +56,8 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 ">
       <Header />
-      
+      <MarqueeBanner />
+
       <main className="py-8">
         <div className="max-w-7xl mx-auto">
           <SearchBar
