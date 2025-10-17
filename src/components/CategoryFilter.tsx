@@ -21,9 +21,12 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
             onClick={() => onCategoryChange(category.key)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
               selectedCategory === category.key
-                  ? 'bg-gradient-to-r from-green-500 to-green-700 text-white shadow-lg'
-                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-600'  
+                  ? 'bg-gradient-to-r from-green-500 to-green-700 text-white shadow-lg border-2 border-green-400'
+                  : 'bg-black text-gray-300 hover:bg-zinc-900 border-2 border-green-600 hover:border-green-500'
             }`}
+            style={selectedCategory === category.key ? {
+              boxShadow: '0 0 15px rgba(34, 197, 94, 0.5), 0 0 30px rgba(34, 197, 94, 0.3)'
+            } : {}}
           >
             {category.label}
           </button>

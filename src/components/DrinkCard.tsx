@@ -12,14 +12,18 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
     switch (category) {
       case 'Combos':
         return 'from-yellow-400 to-orange-500';
+      case 'Promociones':
+        return 'from-lime-400 to-green-500';
       case 'Aperitivos':
-        return 'from-red-500 to-orange-600';
+        return 'from-cyan-400 to-teal-500';
       case 'Cervezas':
         return 'from-red-500 to-red-600';
       case 'Vinos':
         return 'from-purple-500 to-violet-600';
       case 'Vodkas':
         return 'from-blue-400 to-blue-500';
+      case 'Whiskys':
+        return 'from-amber-500 to-yellow-600';
       case 'Gin':
         return 'from-cyan-400 to-teal-500';
       case 'Champan':
@@ -38,10 +42,15 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
           borderColor: 'rgb(251, 191, 36)',
           boxShadow: '0 0 20px rgba(251,191,36,0.6), 0 0 40px rgba(249,115,22,0.4)'
         };
+      case 'Promociones':
+        return {
+          borderColor: 'rgb(163, 230, 53)',
+          boxShadow: '0 0 20px rgba(163,230,53,0.8), 0 0 40px rgba(34,197,94,0.6)'
+        };
       case 'Aperitivos':
         return {
-          borderColor: 'rgb(239, 68, 68)',
-          boxShadow: '0 0 20px rgba(239,68,68,0.6), 0 0 40px rgba(249,115,22,0.4)'
+          borderColor: 'rgb(34, 211, 238)',
+          boxShadow: '0 0 20px rgba(34,211,238,0.6), 0 0 40px rgba(20,184,166,0.4)'
         };
       case 'Cervezas':
         return {
@@ -57,6 +66,11 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
         return {
           borderColor: 'rgb(96, 165, 250)',
           boxShadow: '0 0 20px rgba(96,165,250,0.6), 0 0 40px rgba(59,130,246,0.4)'
+        };
+      case 'Whiskys':
+        return {
+          borderColor: 'rgb(245, 158, 11)',
+          boxShadow: '0 0 20px rgba(245,158,11,0.6), 0 0 40px rgba(234,179,8,0.4)'
         };
       case 'Gin':
         return {
@@ -92,7 +106,7 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
   return (
     <div
       onClick={handleClick}
-      className="bg-gray-800 rounded-lg sm:rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 neon-pulse cursor-pointer"
+      className="bg-black rounded-lg sm:rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 neon-pulse cursor-pointer"
       style={{
         borderColor: neonEffect.borderColor,
         boxShadow: neonEffect.boxShadow
@@ -106,12 +120,19 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
           alt={drink.name}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent"></div>
-        <div className="absolute top-3 right-3 flex gap-1">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        <div className="absolute top-3 right-3 flex flex-col gap-1 items-end">
           {drink.isPopular && (
             <div className="bg-yellow-500 text-black px-1 sm:px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
               <Star className="w-3 h-3 fill-current" />
               <span className="hidden sm:inline">Popular</span>
+            </div>
+          )}
+          {drink.porcentajeDescuento && drink.porcentajeDescuento > 0 && (
+            <div className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold" style={{
+              textShadow: '0 0 10px rgba(34, 197, 94, 0.8), 0 0 20px rgba(34, 197, 94, 0.6)'
+            }}>
+              {drink.porcentajeDescuento}% OFF
             </div>
           )}
         </div>
@@ -119,12 +140,19 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
       
       <div className="p-3 sm:p-5">
         <div className="flex flex-col items-center text-center">
-          <h3 className="text-sm sm:text-lg font-bold text-white mb-3 min-h-[2.5rem] sm:min-h-[3rem] flex items-center justify-center">
+          <h3 className="text-sm sm:text-lg font-bold text-white mb-2 min-h-[2.5rem] sm:min-h-[3rem] flex items-center justify-center">
             {drink.name}
           </h3>
-          <span className="text-lg sm:text-2xl font-bold text-white drop-shadow-md">
-            ${drink.price}
-          </span>
+          <div className="flex flex-col items-center gap-0.5">
+            {drink.precioAnterior && drink.porcentajeDescuento && drink.porcentajeDescuento > 0 && (
+              <span className="text-sm sm:text-lg text-red-500 line-through font-semibold">
+                ${drink.precioAnterior}
+              </span>
+            )}
+            <span className="text-2xl sm:text-4xl font-bold text-white drop-shadow-md">
+              ${drink.precioVenta}
+            </span>
+          </div>
         </div>
       </div>
     </div>

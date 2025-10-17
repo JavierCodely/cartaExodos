@@ -2,11 +2,13 @@ export interface Drink {
   id: string;
   name: string;
   description: string;
-  price: string;
+  precioVenta: string;
+  precioAnterior?: string;
+  porcentajeDescuento?: number;
   category: DrinkCategory;
   image: string;
   isPopular?: boolean;
   alcoholContent?: string;
 }
 
-export type DrinkCategory = 'Combos' | 'Aperitivos' | 'Cervezas' | 'Vinos' | 'Sin-alcohol' | 'Vodkas' | 'Gin' | 'Champan';
+export type DrinkCategory = 'Combos' | 'Promociones' | 'Aperitivos' | 'Cervezas' | 'Vinos' | 'Sin-alcohol' | 'Vodkas' | 'Whiskys' | 'Gin' | 'Champan';

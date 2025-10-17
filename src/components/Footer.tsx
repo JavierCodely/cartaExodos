@@ -3,7 +3,7 @@ import { Clock, MapPin, Phone } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8 mt-12 border-t border-gray-800">
+    <footer className="bg-black text-gray-300 py-8 mt-12 border-t border-gray-800">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start space-x-2">
