@@ -16,8 +16,6 @@ export const vodkasData: DrinkWithoutId[] = [
     name: 'SERNOVA',
     description: 'SERNOVA en botella',
     precioVenta: "17.000",
-    precioAnterior: "20.000",
-    porcentajeDescuento: 30,
     category: 'Vodkas',
     image: '/img/sernovaindivirul.png',
     isPopular: false,
