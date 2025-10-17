@@ -25,7 +25,7 @@ export const cervezasData: DrinkWithoutId[] = [
   {
     name: 'Corona 710CC',
     description: 'Corona en botella 710CC',
-    precioVenta: "11.000",
+    precioVenta: "10.000",
     category: 'Cervezas',
     image: '/img/corona botella.png',
     isPopular: false,
