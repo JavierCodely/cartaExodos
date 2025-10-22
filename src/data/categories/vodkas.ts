@@ -6,9 +6,9 @@ export const vodkasData: DrinkWithoutId[] = [
   {
     name: 'ABSOLUTE VODKA',
     description: 'ABSOLUTE VODKA en botella',
-    precioVenta: "60.000",
-    precioAnterior: "65.000",
-    porcentajeDescuento: 7.7,
+    precioVenta: "50.000",
+    precioAnterior: "60.000",
+    porcentajeDescuento: 16.7,
     category: 'Vodkas',
     image: '/img/img/ABSOLUTE.png',
     isPopular: false,

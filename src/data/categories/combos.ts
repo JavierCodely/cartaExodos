@@ -7,9 +7,9 @@ export const combosData: DrinkWithoutId[] = [
   {
     name: 'ABSOLUT VODKA + 4 SPEED',
     description: 'Combo de 1 absolute vodka y 4 speed.',
-    precioVenta: "70.000",
+    precioVenta: "60.000",
     precioAnterior: "81.000",
-    porcentajeDescuento: 13.5,
+    porcentajeDescuento: 25.9,
     category: 'Combos',
     image: '/img/img/comboabsolute4speed.png',
     isPopular: true,
@@ -18,9 +18,9 @@ export const combosData: DrinkWithoutId[] = [
   {
     name: 'JW RED LABEL + 4 SPEED',
     description: 'Combo de 1 red label y 4 speed.',
-    precioVenta: "70.000",  
+    precioVenta: "60.000",  
     precioAnterior: "76.000",
-    porcentajeDescuento: 7.9,
+    porcentajeDescuento: 15.8,
     category: 'Combos',
     image: '/img/img/comboredlabel.png',
     isPopular: true,
