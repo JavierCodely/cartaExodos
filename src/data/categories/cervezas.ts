@@ -36,5 +36,16 @@ export const cervezasData: DrinkWithoutId[] = [
     image: '/img/corona botella.png',
     isPopular: false,
     alcoholContent: '100%'
+  },
+  {
+    name: 'Corona en Lata',
+    description: 'Corona en lata',
+    precioVenta: "3.000",
+    precioAnterior: "5.000",
+    porcentajeDescuento: 40,
+    category: 'Cervezas',
+    image: '/img/corona lata.png',
+    isPopular: false,
+    alcoholContent: '100%'
   }
 ];
