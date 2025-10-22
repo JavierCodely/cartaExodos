@@ -44,7 +44,7 @@ export const cervezasData: DrinkWithoutId[] = [
     precioAnterior: "5.000",
     porcentajeDescuento: 40,
     category: 'Cervezas',
-    image: '/img/corona lata.png',
+    image: '/img/img/corona.png',
     isPopular: false,
     alcoholContent: '100%'
   }
