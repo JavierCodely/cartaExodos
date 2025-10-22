@@ -79,7 +79,7 @@ export const combosData: DrinkWithoutId[] = [
     porcentajeDescuento: 10.7,
     category: 'Combos',
     image: '/img/img/combocosechatardia.png',
-    isPopular: false,
+    isPopular: true,
     alcoholContent: '100%'
   },
   {
