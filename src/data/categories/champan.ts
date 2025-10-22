@@ -35,7 +35,7 @@ export const champanData: DrinkWithoutId[] = [
   {
     name: 'M.M Demi Sec',
     description: 'M.M Demi Sec',
-    precioVenta: "40.000",
+    precioVenta: "20.000",
     category: 'Champan',
     image: '/img/img/demisec.png',
     isPopular: false,
@@ -44,7 +44,7 @@ export const champanData: DrinkWithoutId[] = [
   {
     name: 'M.M Extra Brut',
     description: 'M.M Extra Brut',
-    precioVenta: "40.000",
+    precioVenta: "20.000",
     category: 'Champan',
     image: '/img/img/extrabrut.png',
     isPopular: false,
