@@ -6,9 +6,9 @@ export const promocionesData: DrinkWithoutId[] = [
   {
     name: 'X 5 CORONA EN LATA',
     description: 'CORONA EN LATA',
-    precioVenta: "18.000",
-    precioAnterior: "25.000",
-    porcentajeDescuento: 28,
+    precioVenta: "12.500",
+    precioAnterior: "18.000",
+    porcentajeDescuento: 30.6,
     category: 'Promociones',
     image: '/img/img/corona.png',
     isPopular: true,
