@@ -6,8 +6,8 @@ export const sinAlcoholData: DrinkWithoutId[] = [
   {
     name: 'Agua Mineral',
     description: 'Agua mineral de lasmisiones manaos',
-    precioVenta: "5.000",
-    precioAnterior: "3.500",
+    precioVenta: "3.500",
+    precioAnterior: "5.000",
     porcentajeDescuento: 20,
     category: 'Sin-alcohol',
     image: '/img/las misiones.png',
