@@ -15,6 +15,8 @@ export const vinosData: DrinkWithoutId[] = [
   {
     name: 'Cosecha Tardia',
     description: 'Cosecha Tardia en botella',
+    precioAnterior: "18.000",
+    porcentajeDescuento: 16.7,
     precioVenta: "15.000",
     category: 'Vinos',
     image: '/img/img/cosechatardia.png',
@@ -33,7 +35,9 @@ export const vinosData: DrinkWithoutId[] = [
   {
     name: 'NEW AGE',
     description: 'NEW AGE en botella',
-    precioVenta: "15.000",
+    precioVenta: "14.000",
+    precioAnterior: "15.000",
+    porcentajeDescuento: 6.7,
     category: 'Vinos',
     image: '/img/img/newage.png',
     isPopular: false,

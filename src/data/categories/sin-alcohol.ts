@@ -6,7 +6,9 @@ export const sinAlcoholData: DrinkWithoutId[] = [
   {
     name: 'Agua Mineral',
     description: 'Agua mineral de lasmisiones manaos',
-    precioVenta: "4.500",
+    precioVenta: "5.000",
+    precioAnterior: "3.500",
+    porcentajeDescuento: 20,
     category: 'Sin-alcohol',
     image: '/img/las misiones.png',
     isPopular: false,
@@ -24,7 +26,9 @@ export const sinAlcoholData: DrinkWithoutId[] = [
   {
     name: 'Pindapoy',
     description: 'Pindapoy en lata',
-    precioVenta: "5000",
+    precioVenta: "4000",
+    precioAnterior: "5000",
+    porcentajeDescuento: 20,
     category: 'Sin-alcohol',
     image: '/img/img/pindapoy.png',
     isPopular: false,
@@ -33,7 +37,9 @@ export const sinAlcoholData: DrinkWithoutId[] = [
   {
     name: 'Sprite',
     description: 'Sprite en lata',
-    precioVenta: "5.000",
+    precioVenta: "3.500",
+    precioAnterior: "5.000",
+    porcentajeDescuento: 30,
     category: 'Sin-alcohol',
     image: '/img/spritee.png',
     isPopular: false,
@@ -42,7 +48,9 @@ export const sinAlcoholData: DrinkWithoutId[] = [
   {
     name: 'SPEED UNLIMITED',
     description: 'SPEED UNLIMITED ',
-    precioVenta: "5.000",
+    precioVenta: "4.500",
+    precioAnterior: "5.000",
+    porcentajeDescuento: 10,
     category: 'Sin-alcohol',
     image: '/img/speed.png',
     isPopular: true,

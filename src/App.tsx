@@ -1,6 +1,6 @@
 import  { useState, useMemo } from 'react';
 import { Header } from './components/Header';
-// import { MarqueeBanner } from './components/MarqueeBanner';
+import { MarqueeBanner } from './components/MarqueeBanner';
 import { SearchBar } from './components/SearchBar';
 import { CategoryFilter } from './components/CategoryFilter';
 import { DrinkGrid } from './components/DrinkGrid';
@@ -68,7 +68,7 @@ function App() {
   return (
     <div className="min-h-screen bg-black ">
       <Header />
-      {/* <MarqueeBanner /> */}
+      <MarqueeBanner />
 
       <main className="py-4">
         <div className="max-w-7xl mx-auto">

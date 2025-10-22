@@ -6,7 +6,9 @@ export const vodkasData: DrinkWithoutId[] = [
   {
     name: 'ABSOLUTE VODKA',
     description: 'ABSOLUTE VODKA en botella',
-    precioVenta: "65.000",
+    precioVenta: "60.000",
+    precioAnterior: "65.000",
+    porcentajeDescuento: 7.7,
     category: 'Vodkas',
     image: '/img/img/ABSOLUTE.png',
     isPopular: false,
@@ -15,7 +17,9 @@ export const vodkasData: DrinkWithoutId[] = [
   {
     name: 'SERNOVA',
     description: 'SERNOVA en botella',
-    precioVenta: "17.000",
+    precioVenta: "15.000",
+    precioAnterior: "17.000",
+    porcentajeDescuento: 11.8,
     category: 'Vodkas',
     image: '/img/sernovaindivirul.png',
     isPopular: false,
@@ -24,7 +28,9 @@ export const vodkasData: DrinkWithoutId[] = [
   {
     name: 'SKYY VODKA',
     description: 'SKYY VODKA en botella',
-    precioVenta: "20.000",
+    precioVenta: "23.000",
+    precioAnterior: "25.000",
+    porcentajeDescuento: 8,
     category: 'Vodkas',
     image: '/img/vodka indiviual.png',
     isPopular: false,
