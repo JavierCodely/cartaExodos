@@ -59,7 +59,7 @@ export const sinAlcoholData: DrinkWithoutId[] = [
   {
     name: 'Monster Energy',
     description: 'Monster Energy en lata',
-    precioVenta: "6.000",
+    precioVenta: "5.000",
     category: 'Sin-alcohol',
     image: '/img/monster energy.png',
     isPopular: false,
