@@ -96,7 +96,7 @@ export const combosData: DrinkWithoutId[] = [
   {
     name: 'COSECHA TARDIA + 4 SPRITE',
     description: 'Combo de 1 cosecha tardia y 4 sprite.',
-    precioVenta: "25.000",
+    precioVenta: "20.000",
     precioAnterior: "28.000",
     porcentajeDescuento: 10.7,
     category: 'Combos',
@@ -118,7 +118,7 @@ export const combosData: DrinkWithoutId[] = [
   {
     name: 'NEW AGE+ 4 SPEED',
     description: 'Combo de 1 new age y 4 speed.',
-    precioVenta: "25.000",
+    precioVenta: "20.000",
     precioAnterior: "30.000",
     porcentajeDescuento: 16.7,
     category: 'Combos',
@@ -129,8 +129,8 @@ export const combosData: DrinkWithoutId[] = [
   {
     name: 'M.M Extra Brut  + 2 SPEED',
     description: 'Combo de 1 m.m extra brut y 2 speed.',
-    precioVenta: "25.000",
-    precioAnterior: "28.000",
+    precioVenta: "45.000",
+    precioAnterior: "50.000",
     porcentajeDescuento: 10.7,
     category: 'Combos',
     image: '/img/img/comboextrabrut.png',
