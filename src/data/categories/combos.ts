@@ -129,7 +129,7 @@ export const combosData: DrinkWithoutId[] = [
   {
     name: 'M.M Extra Brut  + 2 SPEED',
     description: 'Combo de 1 m.m extra brut y 2 speed.',
-    precioVenta: "45.000",
+    precioVenta: "35.000",
     precioAnterior: "50.000",
     porcentajeDescuento: 10.7,
     category: 'Combos',
