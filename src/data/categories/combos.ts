@@ -47,7 +47,7 @@ export const combosData: DrinkWithoutId[] = [
     name: 'RED LABEL + 4 SPEED',
     description: 'Combo de 1 red label y 4 speed.',
     precioVenta: "70.000",
-    precio_efectivo: "70.000",
+    precio_efectivo: "65.000",
     precio_transferencia: "71.000",
     precioAnterior: "76.000",
     porcentajeDescuento: 7.9,
