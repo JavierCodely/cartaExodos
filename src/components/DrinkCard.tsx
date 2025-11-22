@@ -1,13 +1,24 @@
 import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 import { Drink } from '../types/drink';
+import { PaymentMethod, calculatePriceByPaymentMethod } from '../utils/priceCalculations';
 
 interface DrinkCardProps {
   drink: Drink;
+  paymentMethod: PaymentMethod;
 }
 
-export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
+export const DrinkCard: React.FC<DrinkCardProps> = ({ drink, paymentMethod }) => {
   const [isSelected, setIsSelected] = useState(false);
+
+  // Calcular precio y descuento según el método de pago
+  const priceInfo = calculatePriceByPaymentMethod(
+    drink.precio_efectivo,
+    drink.precio_transferencia,
+    drink.precioAnterior,
+    paymentMethod
+  );
+
   const getCategoryColor = (category: string) => {
     switch (category) {
       case 'Combos':
@@ -128,11 +139,11 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
               <span className="hidden sm:inline">Popular</span>
             </div>
           )}
-          {drink.porcentajeDescuento && drink.porcentajeDescuento > 0 && (
+          {priceInfo.discountPercentage && priceInfo.discountPercentage > 0 && (
             <div className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold" style={{
               textShadow: '0 0 10px rgba(34, 197, 94, 0.8), 0 0 20px rgba(34, 197, 94, 0.6)'
             }}>
-              {drink.porcentajeDescuento}% OFF
+              {priceInfo.discountPercentage}% OFF
             </div>
           )}
         </div>
@@ -144,13 +155,13 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink }) => {
             {drink.name}
           </h3>
           <div className="flex flex-col items-center gap-0.5">
-            {drink.precioAnterior && drink.porcentajeDescuento && drink.porcentajeDescuento > 0 && (
+            {priceInfo.previousPrice && priceInfo.discountPercentage && priceInfo.discountPercentage > 0 && (
               <span className="text-sm sm:text-lg text-red-500 line-through font-semibold">
-                ${drink.precioAnterior}
+                ${priceInfo.previousPrice}
               </span>
             )}
             <span className="text-2xl sm:text-4xl font-bold text-white drop-shadow-md">
-              ${drink.precioVenta}
+              ${priceInfo.currentPrice}
             </span>
           </div>
         </div>

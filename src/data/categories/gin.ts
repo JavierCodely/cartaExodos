@@ -18,6 +18,8 @@ export const ginData: DrinkWithoutId[] = [
     name: 'LLAVE',
     description: ' GIN LLAVE en botella',
     precioVenta: "10.000",
+    precio_efectivo: "10.000",
+    precio_transferencia: "11.000",
     category: 'Gin',
     image: '/img/img/GIN LLAVE.png',
     isPopular: false,

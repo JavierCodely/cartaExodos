@@ -3,10 +3,12 @@ import { Header } from './components/Header';
 import { MarqueeBanner } from './components/MarqueeBanner';
 import { SearchBar } from './components/SearchBar';
 import { CategoryFilter } from './components/CategoryFilter';
+import { PaymentMethodSelector } from './components/PaymentMethodSelector';
 import { DrinkGrid } from './components/DrinkGrid';
 import { Footer } from './components/Footer';
 import { drinks } from './data/drinks';
 import { DrinkCategory } from './types/drink';
+import { PaymentMethod } from './utils/priceCalculations';
 
 const categories = [
   { key: 'all' as const, label: 'Todas' },
@@ -25,6 +27,7 @@ const categories = [
 function App() {
   const [selectedCategory, setSelectedCategory] = useState<DrinkCategory | 'all'>('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('transferencia');
 
   const filteredDrinks = useMemo(() => {
     let filtered = drinks;
@@ -76,17 +79,22 @@ function App() {
             searchTerm={searchTerm}
             onSearchChange={setSearchTerm}
           />
-          
+
           <CategoryFilter
               categories={categories as { key: DrinkCategory | 'all'; label: string }[]}
             selectedCategory={selectedCategory}
             onCategoryChange={setSelectedCategory}
           />
-          
-          <DrinkGrid drinks={filteredDrinks} />
+
+          <PaymentMethodSelector
+            selectedMethod={paymentMethod}
+            onMethodChange={setPaymentMethod}
+          />
+
+          <DrinkGrid drinks={filteredDrinks} paymentMethod={paymentMethod} />
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );

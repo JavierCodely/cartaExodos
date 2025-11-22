@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const MarqueeBanner: React.FC = () => {
-  const text = 'NUEVOS PRECIOS';
+  const text = 'DESCUENTO EN EFECTIVO';
   const repeatedText = Array(20).fill(text).join(' ★ ');
 
   return (
@@ -16,19 +16,25 @@ export const MarqueeBanner: React.FC = () => {
           }
         }
         .animate-marquee {
-          animation: marquee 15s linear infinite;
+          animation: marquee 9s linear infinite;
         }
       `}</style>
-      <div className="relative w-full overflow-hidden bg-yellow-400 border-y-4 border-yellow-500 py-2 shadow-lg">
+      <div className="sticky top-0 z-40 w-full overflow-hidden bg-green-500 border-y-4 border-green-600 py-2 shadow-lg" style={{
+        boxShadow: '0 0 20px rgba(34,197,94,0.8), 0 0 40px rgba(34,197,94,0.6)'
+      }}>
         {/* Efecto de sombra LED */}
-        <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-300 opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-green-500 to-green-400 opacity-50"></div>
 
         {/* Contenedor de la animación */}
         <div className="relative flex animate-marquee whitespace-nowrap">
-          <span className="text-black font-black text-2xl md:text-3xl tracking-wider font-mono px-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
+          <span className="text-black font-black text-2xl md:text-3xl tracking-wider font-mono px-4" style={{
+            textShadow: '0 0 10px rgba(255,255,255,0.8), 0 2px 2px rgba(0,0,0,0.3)'
+          }}>
             {repeatedText}
           </span>
-          <span className="text-black font-black text-2xl md:text-3xl tracking-wider font-mono px-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
+          <span className="text-black font-black text-2xl md:text-3xl tracking-wider font-mono px-4" style={{
+            textShadow: '0 0 10px rgba(255,255,255,0.8), 0 2px 2px rgba(0,0,0,0.3)'
+          }}>
             {repeatedText}
           </span>
         </div>
