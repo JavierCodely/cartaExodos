@@ -12,10 +12,10 @@ export const DrinkCard: React.FC<DrinkCardProps> = ({ drink, paymentMethod }) =>
   const [isSelected, setIsSelected] = useState(false);
 
   // Calcular precio y descuento según el método de pago
+  // El descuento se calcula automáticamente desde precio_transferencia a precio_efectivo
   const priceInfo = calculatePriceByPaymentMethod(
     drink.precio_efectivo,
     drink.precio_transferencia,
-    drink.precioAnterior,
     paymentMethod
   );
 

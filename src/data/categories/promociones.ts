@@ -9,8 +9,6 @@ export const promocionesData: DrinkWithoutId[] = [
     precioVenta: "12.500",
     precio_efectivo: "13000",
     precio_transferencia: "14.000",
-    precioAnterior: "18.000",
-    porcentajeDescuento: 30.6,
     category: 'Promociones',
     image: '/img/img/corona.png',
     isPopular: true,
