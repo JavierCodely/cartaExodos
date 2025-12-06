@@ -8,7 +8,7 @@ export const aperitivosData: DrinkWithoutId[] = [
     description: 'Vaso de gin tonic de 500cc',
     precioVenta: "3.000",
     precio_efectivo: "4.000",
-    precio_transferencia: "4.500",
+    precio_transferencia: "5000",
     precioAnterior: "5.000",
     porcentajeDescuento: 40,
     category: 'Aperitivos',
